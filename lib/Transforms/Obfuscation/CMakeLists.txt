@@ -1,0 +1,18 @@
+add_llvm_library(LLVMObfuscation
+  FunctionCallObfuscate.cpp
+  CryptoUtils.cpp
+  BogusControlFlow.cpp
+  Substitution.cpp
+  Flattening.cpp
+  Utils.cpp
+  SplitBasicBlocks.cpp
+  AntiDebugging.cpp
+  AntiClassDump.cpp
+  StringEncryption.cpp
+  IndirectBranch.cpp
+  AntiHooking.cpp
+  FunctionWrapper.cpp
+  Obfuscation.cpp
+  DEPENDS
+  intrinsics_gen
+  )
